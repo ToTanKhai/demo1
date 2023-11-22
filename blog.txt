@@ -1,0 +1,11 @@
+if(!empty($cart)){
+            $qtyInProductInCart = $cart[$key]['qty'];
+            $total = $qty + $qtyInProductInCart;
+            // dd($total);
+            $productSize = ProductSize::where('product_id', $id)
+            ->where('size_id', $cart[$key]['size_id'])
+            ->firstOrFail();
+            if ($total > $productSize->quantity ){
+                return response()->json(['id' => $id, 'error' => 'Out of Stock']);
+            }
+        }
