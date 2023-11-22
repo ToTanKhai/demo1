@@ -1,0 +1,18 @@
+[config]="{
+    toolbar: [ 'heading', '|', 'fontfamily', 'fontsize', 'alignment', 'fontColor', 'fontBackgroundColor','|',
+              'bold', 'italic', 'strikethrough', 'underline', 'subscript', 'superscript', '|',
+              'link', '|',
+              'outdent', 'indent', '|',
+              'bulletedList', '-','numberedList', 'todoList', '|',
+              'code','codeBlock', '|',
+              'insertTable', '|',
+              'imageUpload', 'blockQuote', '|',
+              'todoList',
+              'undo','redo',
+            ],
+    simpleUpload:{
+      uploadUrl: 'http://example.com',
+
+
+    }
+   }"
